@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_43b0e84278744e19865a9dbf2fcaed2e {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_43b0e84278744e19865a9dbf2fcaed2e" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_43b0e84278744e19865a9dbf2fcaed2e = L.map(
+                                  'map_43b0e84278744e19865a9dbf2fcaed2e',
+                                  {center: [52.904532,-8.9811351],
+                                  zoom: 12,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_65c9814b33c74f59b2d0946af8c3c9a3 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+
+        
+    
+
+            var marker_d4144bab22fd474aad0f18d61a01c669 = L.marker(
+                [52.83810500000001,-8.973187999999999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_23b5dc7da0404873ae97e04fe7691d89 = L.popup({maxWidth: '300'});
+
+            
+                var html_4e50c86c8bb3490f88aeac84f19fa328 = $('<div id="html_4e50c86c8bb3490f88aeac84f19fa328" style="width: 100.0%; height: 100.0%;">Ozone Health &amp; Fitness</div>')[0];
+                popup_23b5dc7da0404873ae97e04fe7691d89.setContent(html_4e50c86c8bb3490f88aeac84f19fa328);
+            
+
+            marker_d4144bab22fd474aad0f18d61a01c669.bindPopup(popup_23b5dc7da0404873ae97e04fe7691d89);
+
+            
+        
+    
+
+            var marker_3e026d771d714085a7b0185df636fab0 = L.marker(
+                [52.8510815,-8.9848094],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_263ec50ec1564233b8a7e5cce2f3fcfd = L.popup({maxWidth: '300'});
+
+            
+                var html_c40fd5abe11744f1b594f1f73f55aa44 = $('<div id="html_c40fd5abe11744f1b594f1f73f55aa44" style="width: 100.0%; height: 100.0%;">Ennis Leisure Complex</div>')[0];
+                popup_263ec50ec1564233b8a7e5cce2f3fcfd.setContent(html_c40fd5abe11744f1b594f1f73f55aa44);
+            
+
+            marker_3e026d771d714085a7b0185df636fab0.bindPopup(popup_263ec50ec1564233b8a7e5cce2f3fcfd);
+
+            
+        
+    
+
+            var marker_5f94980c30d245d18b8b9d3c1056f9e3 = L.marker(
+                [52.705244,-8.877989999999999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_5075ad5805fe44049db593ffd8940ef0 = L.popup({maxWidth: '300'});
+
+            
+                var html_fad840eee8454698bee54cb6b4d7054c = $('<div id="html_fad840eee8454698bee54cb6b4d7054c" style="width: 100.0%; height: 100.0%;">Shannon Swimming &amp; Leisure Centre</div>')[0];
+                popup_5075ad5805fe44049db593ffd8940ef0.setContent(html_fad840eee8454698bee54cb6b4d7054c);
+            
+
+            marker_5f94980c30d245d18b8b9d3c1056f9e3.bindPopup(popup_5075ad5805fe44049db593ffd8940ef0);
+
+            
+        
+    
+
+            var marker_5726a77944e9412e83fbc7d1ce485cbd = L.marker(
+                [52.8397524,-8.9877918],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_8f48226520be4ca39d0a37eec9b6c16f = L.popup({maxWidth: '300'});
+
+            
+                var html_26815987effb47f399aeef988e255c81 = $('<div id="html_26815987effb47f399aeef988e255c81" style="width: 100.0%; height: 100.0%;">Educogym</div>')[0];
+                popup_8f48226520be4ca39d0a37eec9b6c16f.setContent(html_26815987effb47f399aeef988e255c81);
+            
+
+            marker_5726a77944e9412e83fbc7d1ce485cbd.bindPopup(popup_8f48226520be4ca39d0a37eec9b6c16f);
+
+            
+        
+    
+
+            var marker_56f0a872d05e48e0a926fb17dc87339e = L.marker(
+                [52.93382939999999,-9.347463499999998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_d7a3274f3abc463fa2269ee65f660414 = L.popup({maxWidth: '300'});
+
+            
+                var html_0cd64f54bc5741a4a72584774c5d561f = $('<div id="html_0cd64f54bc5741a4a72584774c5d561f" style="width: 100.0%; height: 100.0%;">Lahinch Seaworld and Leisure Centre- Dive Academy-diving school</div>')[0];
+                popup_d7a3274f3abc463fa2269ee65f660414.setContent(html_0cd64f54bc5741a4a72584774c5d561f);
+            
+
+            marker_56f0a872d05e48e0a926fb17dc87339e.bindPopup(popup_d7a3274f3abc463fa2269ee65f660414);
+
+            
+        
+    
+
+            var marker_221a52634461478298a46aa4fb109176 = L.marker(
+                [52.941422,-9.297384],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_40e96bee6e0e4317bdec3ba7b7c90f2a = L.popup({maxWidth: '300'});
+
+            
+                var html_4b4b9a3c80244aa5a445e6d2ba6ad068 = $('<div id="html_4b4b9a3c80244aa5a445e6d2ba6ad068" style="width: 100.0%; height: 100.0%;">Falls Hotel &amp; Spa</div>')[0];
+                popup_40e96bee6e0e4317bdec3ba7b7c90f2a.setContent(html_4b4b9a3c80244aa5a445e6d2ba6ad068);
+            
+
+            marker_221a52634461478298a46aa4fb109176.bindPopup(popup_40e96bee6e0e4317bdec3ba7b7c90f2a);
+
+            
+        
+    
+
+            var marker_3c78a382589e49dd95fe1e86d5863027 = L.marker(
+                [52.6851529,-8.5781168],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_2c123d564e8145c2a06bfa4252dc3eb0 = L.popup({maxWidth: '300'});
+
+            
+                var html_a6996e906a44444697003b3d934cf202 = $('<div id="html_a6996e906a44444697003b3d934cf202" style="width: 100.0%; height: 100.0%;">Irish Aerial Creation Centre</div>')[0];
+                popup_2c123d564e8145c2a06bfa4252dc3eb0.setContent(html_a6996e906a44444697003b3d934cf202);
+            
+
+            marker_3c78a382589e49dd95fe1e86d5863027.bindPopup(popup_2c123d564e8145c2a06bfa4252dc3eb0);
+
+            
+        
+    
+
+            var marker_96a9840f846141019f8e94d1050f4dd7 = L.marker(
+                [52.7169908,-8.8731377],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_f70e5055b494477ea7240105a1773b79 = L.popup({maxWidth: '300'});
+
+            
+                var html_9489cdab46ee4150a0f7d183e9d3e39d = $('<div id="html_9489cdab46ee4150a0f7d183e9d3e39d" style="width: 100.0%; height: 100.0%;">CrossFit na Sionna</div>')[0];
+                popup_f70e5055b494477ea7240105a1773b79.setContent(html_9489cdab46ee4150a0f7d183e9d3e39d);
+            
+
+            marker_96a9840f846141019f8e94d1050f4dd7.bindPopup(popup_f70e5055b494477ea7240105a1773b79);
+
+            
+        
+    
+
+            var marker_26372b70336b447583bdf60ebda2a53f = L.marker(
+                [52.789468,-8.915143],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_6a435a6a029f41988de29494f5763f7c = L.popup({maxWidth: '300'});
+
+            
+                var html_8c8663c958bd4e8da53a176ec209c9b0 = $('<div id="html_8c8663c958bd4e8da53a176ec209c9b0" style="width: 100.0%; height: 100.0%;">The Inn At Dromoland</div>')[0];
+                popup_6a435a6a029f41988de29494f5763f7c.setContent(html_8c8663c958bd4e8da53a176ec209c9b0);
+            
+
+            marker_26372b70336b447583bdf60ebda2a53f.bindPopup(popup_6a435a6a029f41988de29494f5763f7c);
+
+            
+        
+    
+
+            var marker_0cd4b597c2f44f4a90dcea9752887797 = L.marker(
+                [52.851553,-8.9838685],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_a6a72bfe96174159af347f3ba251216e = L.popup({maxWidth: '300'});
+
+            
+                var html_3c60b283652a4a86b61c9e3e2bdde68d = $('<div id="html_3c60b283652a4a86b61c9e3e2bdde68d" style="width: 100.0%; height: 100.0%;">ACTIVE ENNIS POOL</div>')[0];
+                popup_a6a72bfe96174159af347f3ba251216e.setContent(html_3c60b283652a4a86b61c9e3e2bdde68d);
+            
+
+            marker_0cd4b597c2f44f4a90dcea9752887797.bindPopup(popup_a6a72bfe96174159af347f3ba251216e);
+
+            
+        
+    
+
+            var marker_f86ebb76c612497b8dcc9c13efb4a8cf = L.marker(
+                [52.850324,-9.000534],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_7574dbf8d4c24cde9973423d19b518ac = L.popup({maxWidth: '300'});
+
+            
+                var html_62c1e1c8a95a437aa15516b45077a3d7 = $('<div id="html_62c1e1c8a95a437aa15516b45077a3d7" style="width: 100.0%; height: 100.0%;">Body And Mind Fitness</div>')[0];
+                popup_7574dbf8d4c24cde9973423d19b518ac.setContent(html_62c1e1c8a95a437aa15516b45077a3d7);
+            
+
+            marker_f86ebb76c612497b8dcc9c13efb4a8cf.bindPopup(popup_7574dbf8d4c24cde9973423d19b518ac);
+
+            
+        
+    
+
+            var marker_c3195ba226d64ee98cd94bf02049a520 = L.marker(
+                [52.875327,-8.962235999999997],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_559f7d3b90164d63aecb728715cffc7b = L.popup({maxWidth: '300'});
+
+            
+                var html_da6c4587770741798a82001de3e1d6c5 = $('<div id="html_da6c4587770741798a82001de3e1d6c5" style="width: 100.0%; height: 100.0%;">Ennis Gymnastics Club</div>')[0];
+                popup_559f7d3b90164d63aecb728715cffc7b.setContent(html_da6c4587770741798a82001de3e1d6c5);
+            
+
+            marker_c3195ba226d64ee98cd94bf02049a520.bindPopup(popup_559f7d3b90164d63aecb728715cffc7b);
+
+            
+        
+    
+
+            var marker_78ea8e6b2ea24696a4948a288a4d5202 = L.marker(
+                [52.82090780000001,-8.977343],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_3f57746306a7413e89aab828380c226e = L.popup({maxWidth: '300'});
+
+            
+                var html_d8084e510d194e3da56b3fbcc296f4cc = $('<div id="html_d8084e510d194e3da56b3fbcc296f4cc" style="width: 100.0%; height: 100.0%;">Vr fitness</div>')[0];
+                popup_3f57746306a7413e89aab828380c226e.setContent(html_d8084e510d194e3da56b3fbcc296f4cc);
+            
+
+            marker_78ea8e6b2ea24696a4948a288a4d5202.bindPopup(popup_3f57746306a7413e89aab828380c226e);
+
+            
+        
+    
+
+            var marker_a9fac9baca3e49d99332448c051cba69 = L.marker(
+                [52.9445562,-9.433186899999999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_97422bf26b8c42d384e9dbc302d58f5f = L.popup({maxWidth: '300'});
+
+            
+                var html_724325c85e374e84b505daea959ac376 = $('<div id="html_724325c85e374e84b505daea959ac376" style="width: 100.0%; height: 100.0%;">The Cliffs of Moher Retreat</div>')[0];
+                popup_97422bf26b8c42d384e9dbc302d58f5f.setContent(html_724325c85e374e84b505daea959ac376);
+            
+
+            marker_a9fac9baca3e49d99332448c051cba69.bindPopup(popup_97422bf26b8c42d384e9dbc302d58f5f);
+
+            
+        
+    
+
+            var marker_12278297027a45c581707dcec869461d = L.marker(
+                [52.71635049999999,-8.872634699999997],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_b95a6209ec5e40f18d8de991aff76121 = L.popup({maxWidth: '300'});
+
+            
+                var html_1bc0d96f022143cab294b65923ba3695 = $('<div id="html_1bc0d96f022143cab294b65923ba3695" style="width: 100.0%; height: 100.0%;">GoTri Gym</div>')[0];
+                popup_b95a6209ec5e40f18d8de991aff76121.setContent(html_1bc0d96f022143cab294b65923ba3695);
+            
+
+            marker_12278297027a45c581707dcec869461d.bindPopup(popup_b95a6209ec5e40f18d8de991aff76121);
+
+            
+        
+    
+
+            var marker_57114f58e4ea410da013d8d038d160b6 = L.marker(
+                [52.8375262,-8.9695623],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_4e42c932248140a0a90717f542f736d5 = L.popup({maxWidth: '300'});
+
+            
+                var html_0a3a4013301349cc99a66ce7ff20e4ed = $('<div id="html_0a3a4013301349cc99a66ce7ff20e4ed" style="width: 100.0%; height: 100.0%;">CrossFit Ennis</div>')[0];
+                popup_4e42c932248140a0a90717f542f736d5.setContent(html_0a3a4013301349cc99a66ce7ff20e4ed);
+            
+
+            marker_57114f58e4ea410da013d8d038d160b6.bindPopup(popup_4e42c932248140a0a90717f542f736d5);
+
+            
+        
+    
+
+            var marker_1623816e7d0242b1878c4f53c0195a11 = L.marker(
+                [52.647333,-8.581139],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_f70810b182844d03adf8e484aace20a3 = L.popup({maxWidth: '300'});
+
+            
+                var html_2d814494afe14c7fbe2710f50207b167 = $('<div id="html_2d814494afe14c7fbe2710f50207b167" style="width: 100.0%; height: 100.0%;">Beefit Gyms Franchising Ltd.</div>')[0];
+                popup_f70810b182844d03adf8e484aace20a3.setContent(html_2d814494afe14c7fbe2710f50207b167);
+            
+
+            marker_1623816e7d0242b1878c4f53c0195a11.bindPopup(popup_f70810b182844d03adf8e484aace20a3);
+
+            
+        
+    
+
+            var marker_8a4a3f9baf8a4edd95b02c5a94f6a60f = L.marker(
+                [52.64734499999999,-8.618689],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_10710170380c4d01bff7986ad1d47c9e = L.popup({maxWidth: '300'});
+
+            
+                var html_0c9b07fde33f4f0dbdd2983da11a5226 = $('<div id="html_0c9b07fde33f4f0dbdd2983da11a5226" style="width: 100.0%; height: 100.0%;">Maldron Hotel Limerick</div>')[0];
+                popup_10710170380c4d01bff7986ad1d47c9e.setContent(html_0c9b07fde33f4f0dbdd2983da11a5226);
+            
+
+            marker_8a4a3f9baf8a4edd95b02c5a94f6a60f.bindPopup(popup_10710170380c4d01bff7986ad1d47c9e);
+
+            
+        
+    
+
+            var marker_cb803b38eeb44a6298010a412e7528ff = L.marker(
+                [52.6604536,-8.622104199999997],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_620242e688fd46e39d4c95c81151bbbc = L.popup({maxWidth: '300'});
+
+            
+                var html_26eaf0758241422e84319700ad368ba1 = $('<div id="html_26eaf0758241422e84319700ad368ba1" style="width: 100.0%; height: 100.0%;">CityGym Limerick</div>')[0];
+                popup_620242e688fd46e39d4c95c81151bbbc.setContent(html_26eaf0758241422e84319700ad368ba1);
+            
+
+            marker_cb803b38eeb44a6298010a412e7528ff.bindPopup(popup_620242e688fd46e39d4c95c81151bbbc);
+
+            
+        
+    
+
+            var marker_58f641ef283f43708939ee8d8cccff56 = L.marker(
+                [52.86060999999999,-8.982673899999998],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_43b0e84278744e19865a9dbf2fcaed2e);
+            
+    
+            var popup_50d5e85ebf8945988f5a6bb65f162eed = L.popup({maxWidth: '300'});
+
+            
+                var html_b88cfee2794c487e9e51b1c8adaa633e = $('<div id="html_b88cfee2794c487e9e51b1c8adaa633e" style="width: 100.0%; height: 100.0%;">Ryanos Fitness Club Ennis</div>')[0];
+                popup_50d5e85ebf8945988f5a6bb65f162eed.setContent(html_b88cfee2794c487e9e51b1c8adaa633e);
+            
+
+            marker_58f641ef283f43708939ee8d8cccff56.bindPopup(popup_50d5e85ebf8945988f5a6bb65f162eed);
+
+            
+        
+</script>

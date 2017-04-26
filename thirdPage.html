@@ -1,0 +1,202 @@
+<html>
+            <body>
+            
+            <meta name="viewport" content="width=device-width">
+            <head>
+            <title> Gym Finder </title>
+            <style type = "text/css">
+                body{
+                   background-image: url("bg3.jpg");
+                   //height:100%;
+                }
+                #bar {
+                    height: 6%;
+                    width: 20%;
+                    margin-left:75%;
+                    margin-top: 2%;
+                    border: none;
+                    border-radius:5px;
+                    font-size:110%;
+		font-family: Arial, Helvetica, sans-serif;
+                }
+                #s {
+                    height: 5%;
+                    width: 8%;
+                    margin-left:75%;
+                    margin-top: 1%;
+                    border: none;
+                    border-radius:5px;
+                    background-color:#FB6F7E;
+                    color: white;
+                }
+                #c {
+                    height: 5%;
+                    width: 12%;
+                    margin-left:1%;
+                    margin-top: 1%;
+                    border: none;
+                    border-radius:5px;
+                    background-color:#FB6F7E;
+                    color: white;
+                }
+               
+                #n {
+                    width: 90%;
+                    //height: 20%;
+                    padding: 2%;
+                    margin-left: 10%;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 400;
+                    font-size: 250%;
+                    color: white;
+                }
+                #o{
+                    margin-left: 10%;
+                    color:white;
+                    font-family: Arial, Helvetica, sans-serif;
+                   
+                }
+                
+                 #nameopenholder {
+                    width: 25%;
+                    border: 1px solid white;
+                    margin-left:75%;
+                    
+                }
+              
+                #review{
+                    position: absolute;
+                    width: 50%;
+                    top: 23%;
+                    left: 22%;
+                    line-height:1.5;
+                    border-collapse: collapse;
+                    color:white;
+                    //border: 1px solid white;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                 #pid {
+                     position: absolute;
+                    width: 50%;
+                    top: 28%;
+                    left: 22%;
+                    line-height:1.5;
+                    border-collapse: collapse;
+                    color:white;
+                    border: 1px solid white;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                input[type=text]{
+                    background-color: white;
+                
+                } 
+                ul{
+                    position: absolute;
+                    width:200px;
+                    border:none;
+                    top: 20%;
+                }
+                #list li{
+                    list-style-type: none;
+                
+                }
+                input[type=submit]{
+                     outline:none;
+                    width:250px;
+                    padding: 12px 20px;
+                    margin-top: -18;
+                    margin-left: -35;
+                    border: none;
+                   background-color:  #274C67;
+                   // background:  linear-gradient(to bottom, #6db3f2 0%,#3690f0 31%,#54a3ee 50%,#1e69de 100%); 
+                    color: white;
+                 font-family: Arial, Helvetica, sans-serif;
+               }
+                   input[type=submit]:hover { 
+                            background-color: #4887B3;
+                    }
+
+             #thirdDiv{
+                position: relative;
+                width:110%;
+                height: 10%;
+                background-color:#274C67;
+                top:-2%;
+                left: -2%;
+                border-bottom: 1px solid white;
+             }
+            
+            #thirdDiv p{
+                position: relative;
+		top:1em;
+		padding-right:3%;
+		float:left;
+		font-family: Arial, Helvetica, sans-serif;
+                //width:5%;
+                left:20%;
+                //color: white;
+               
+            }
+           #thirdDiv a{							/* this is used to get rid of standard style on the links*/
+		text-decoration:none;
+		color: white;
+            }
+
+            #thirdDiv a:hover {
+                color:#FB6F7E;;
+            }
+     
+                    iframe {
+               position: absolute;
+	width:26%;
+	height: 55%;
+	margin-left:72.8%;
+	margin-top: 2%;
+	border: none;
+}
+
+        h2{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 10px;
+        }
+
+         h3{
+        color: white;
+        position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: -150px;
+        padding-left: 74%;
+        
+        }
+        
+            </style>
+            </head>
+                <div id="thirdDiv">
+                        <p><a href="firstPage.php">HOME</a></p>
+                        <p><a href="secondPage.php"> MAP</a></p>
+                        <p><a href="thirdPage.html"> REVIEWS</a> </p>
+                        <p><a href="forthPage.php">ABOUT</a></p>
+                       
+		</div>
+            <h2> Select a gym </h2>
+            <form action="countyThirdPage.php" method="post" >
+                            
+			<input id = "bar" type="text" name="countyBar" placeholder="County...">
+			<input id="s" type="submit" value="Submit">
+	    </form>
+
+	    <h3> Enter a county to see gyms in that county </h3>
+
+            <div id="nameopenholder">
+	    <div id ="n">Goldstone Fitness Ltd</div>  <table id ="o"> <tr><th>Day</th><th>Times</th></tr><tr><td>Monday</td><td>6:00 AM – 10:00 PM</td></tr><tr><td>Tuesday</td><td>6:00 AM – 10:00 PM</td></tr><tr><td>Wednesday</td><td>6:00 AM – 10:00 PM</td></tr><tr><td>Thursday</td><td>6:00 AM – 10:00 PM</td></tr><tr><td>Friday</td><td>6:00 AM – 9:00 PM</td></tr><tr><td>Saturday</td><td>8:00 AM – 7:00 PM</td></tr><tr><td>Sunday</td><td>9:00 AM – 6:00 PM</td></tr></table></div><ul id = "list"><li><form action="listThirdPage.php" method="post"><input name="placeidSearch" type="hidden" value ="ChIJAeI2t3XEQkgR-1OzaFfEViw"/><input class="nameID" name="listSearch" type="submit" value ="Goldstone Fitness Ltd"/></form></li><li><form action="listThirdPage.php" method="post"><input name="placeidSearch" type="hidden" value ="ChIJiRo_PxvEQkgRXyPBsglvM5o"/><input class="nameID" name="listSearch" type="submit" value ="Kingfisher Club Waterford"/></form></li><li><form action="listThirdPage.php" method="post"><input name="placeidSearch" type="hidden" value ="ChIJxzu0S5rGQkgRGQPPTP47oPU"/><input class="nameID" name="listSearch" type="submit" value ="Educogym"/></form></li><li><form action="listThirdPage.php" method="post"><input name="placeidSearch" type="hidden" value ="ChIJUdbGKmjEQkgRI5K3EutmxTE"/><input class="nameID" name="listSearch" type="submit" value ="Peak Fitness"/></form></li><li><form action="listThirdPage.php" method="post"><input name="placeidSearch" type="hidden" value ="ChIJrbGkL27EQkgRqGP5qJVQ_vM"/><input class="nameID" name="listSearch" type="submit" value ="Crystal Sport & Leisure Centre"/></form></li><li><form action="listThirdPage.php" method="post"><input name="placeidSearch" type="hidden" value ="ChIJ5eo4Cp_GQkgRxVWVEyxFaco"/><input class="nameID" name="listSearch" type="submit" value ="Kangoo Club Ireland"/></form></li><li><form action="listThirdPage.php" method="post"><input name="placeidSearch" type="hidden" value ="ChIJawTX4nLEQkgRbzjTSZvmUPw"/><input class="nameID" name="listSearch" type="submit" value ="Cill Barra Community Sports Centre"/></form></li><li><form action="listThirdPage.php" method="post"><input name="placeidSearch" type="hidden" value ="ChIJWaLHfUfEQkgR55OR-AuoMM0"/><input class="nameID" name="listSearch" type="submit" value ="CrossFit Waterford"/></form></li><li><form action="listThirdPage.php" method="post"><input name="placeidSearch" type="hidden" value ="ChIJj-Rns3XEQkgRrS08mKexGuo"/><input class="nameID" name="listSearch" type="submit" value ="Waterford Warriors Strength and Conditioning"/></form></li><li><form action="listThirdPage.php" method="post"><input name="placeidSearch" type="hidden" value ="ChIJw8-grsfGQkgRf2xifbdPLjk"/><input class="nameID" name="listSearch" type="submit" value ="Balance fitness"/></form></li><li><form action="listThirdPage.php" method="post"><input name="placeidSearch" type="hidden" value ="ChIJ9R2pGCPEQkgRTWzYqCSeTIA"/><input class="nameID" name="listSearch" type="submit" value ="Total Health & Fitness"/></form></li></ul> <table id ="review"> <tr><th >Rating</th><th style=" width:15%; padding-top:-20%;">Time Since</th><th>Reviews</th></tr><tr><td>5</td><td style="margin-top:-20%;">a month ago</td><td>I love this gym. It's really big, has a big variety of equipment and machines. Even though it can be really busy during working days 5-7 pm. No swimming pool, but they can offer a sauna, good showers and a big selection of different classes free of charge if you are a member. People say that there is a hassle while registering, but it just seems so. As you have to register online on their web site before you come to the gym many questions can arise. But, I would offer to come to the gym, if you are not sure how to do registration. Downstairs, ate the entrance there are 2 registration machines. Don't forget to bring your phone, debit/credit card detail as you will need them to make a registration. Usually, staff members can see people through the cameras and if they notice you can't do it yourself, they will help you. If not, ask somebody to call staff member and they will definitely give you a hand. Staff are really helpful there and eager to go extra mile. </td></tr><tr><td>4</td><td style="margin-top:-20%;">2 months ago</td><td>Great gym. Can be a bit crowded on weekdays after 5pm till about 7.30 pm . Other than. That pretty good. Only missing a swimming pool
+</td></tr><tr><td>5</td><td style="margin-top:-20%;">a month ago</td><td>Great gym. Registering is a bit of a hassle though.</td></tr><tr><td>5</td><td style="margin-top:-20%;">a month ago</td><td>Great gym with a monthly rolling contract</td></tr><tr><td>5</td><td style="margin-top:-20%;">3 months ago</td><td>Hands down the best gym in Waterford!</td></tr></table>
+            
+            
+             <iframe src= "http://127.0.0.1/example/GraphTesting.html">
+            </body>
+            <script>
+                
+            
+            </script>
+            </html>
